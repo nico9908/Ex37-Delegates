@@ -8,5 +8,13 @@ namespace Ex37_Delegates
 {
     class Bonuses
     {
+        public double TenPercent(double amount)
+        {
+            return 0;
+        }
+        public double FlatTwoIfAmountMoreThanFive(double amount)
+        {
+            return 0;
+        }
     }
 }
