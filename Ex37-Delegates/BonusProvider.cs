@@ -8,5 +8,9 @@ namespace Ex37_Delegates
 {
     class BonusProvider
     {
+        double BonusProvider(double amount)
+        {
+            return 0;
+        }
     }
 }
