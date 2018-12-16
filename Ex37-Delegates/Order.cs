@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex37_Delegates
 {
-    class Order
+    public class Order
     {
         public BonusProvider Bonus
         {

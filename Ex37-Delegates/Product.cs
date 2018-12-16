@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex37_Delegates
 {
-    class Product
+    public class Product
     {
         public string Name
         {

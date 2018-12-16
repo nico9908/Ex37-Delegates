@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ex37_Delegates
 {
-    class BonusProvider
+    public class BonusProvider
     {
-        double BonusProvider(double amount)
+        private double BonusProvider(double amount)
         {
             return 0;
         }

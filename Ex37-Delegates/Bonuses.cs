@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ex37_Delegates
 {
-    class Bonuses
+    public class Bonuses
     {
         public double TenPercent(double amount)
         {
-            return 0;
+            return 10;
         }
         public double FlatTwoIfAmountMoreThanFive(double amount)
         {
