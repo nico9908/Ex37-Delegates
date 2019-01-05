@@ -8,27 +8,35 @@ namespace Ex37_Delegates
 {
     public class Order
     {
+        private BonusProvider bonus;
+        private List<Product> products = new List<Product>(); 
+
         public BonusProvider Bonus
         {
-            get { return Bonus; }
-            set { Bonus = value; }
+            get { return bonus; }
+            set { bonus = value; }
         }
 
-        public Product AddProduct(p)
+        public void AddProduct(Product p)
         {
-            return p;
+            products.Add(p);
         }
         public double GetValueOfProducts()
         {
-            return 0;
+            double price = 0.0;
+            foreach (Product pro in products)
+            {
+                price += pro.Value;
+            }
+            return price;
         }
         public double GetBonus()
         {
-            return 0;
+            return Bonus(GetValueOfProducts());
         }
         public double GetTotalPrice()
         {
-            return 0;
+            return GetValueOfProducts() - GetBonus();
         }
     }
 }

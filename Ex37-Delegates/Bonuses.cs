@@ -4,17 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public delegate double BonusProvider(double amount);
 namespace Ex37_Delegates
 {
     public class Bonuses
     {
-        public double TenPercent(double amount)
+        public static double TenPercent(double amount)
         {
-            return 10;
+            return amount * 0.10;
         }
-        public double FlatTwoIfAmountMoreThanFive(double amount)
+        public static double FlatTwoIfAmountMoreThanFive(double amount)
         {
-            return 0;
+            if (amount > 5)
+            {
+                return 2.0;
+            }
+            else
+            {
+                return 0.0;
+            }
         }
     }
 }

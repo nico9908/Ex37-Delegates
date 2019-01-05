@@ -8,15 +8,17 @@ namespace Ex37_Delegates
 {
     public class Product
     {
+        private string name;
+        private double value;
         public string Name
         {
-            get { return Name; }
-            set { Name = value; }
+            get { return name; }
+            set { name = value; }
         }
         public double Value
         {
-            get { return Value; }
-            set { Value = value; }
+            get { return value; }
+            set { this.value = value; }
         }
     }
 }
